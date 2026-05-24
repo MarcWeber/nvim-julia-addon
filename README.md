@@ -6,6 +6,12 @@ or supply your own error format like this:
 
 let efm=  @ %f:%l,   @ %f:%l
 
+NEW IMPLEMENTATION
+===================
+lua/watched-terminal-process-finding-julia-errors2.lua
+
+vim.api.nvim_create_user_command("JuliaWatchedZSH", function() require('watched-terminal-process-finding-julia-errors2').launch_julia_watcher() end, {})
+
 Implementation 1:
 =================
 lua/watched-terminal-process-finding-isabelle-errors.lua
